@@ -1,0 +1,47 @@
+/* #region common */
+:root {
+    --bs-light: rgb(229, 229, 229);
+    --bs-lighter: rgb(248, 249, 250);
+}
+
+header {
+    height: 70px;
+    /* background-color: var(--bs-lighter); */
+}
+
+main {
+    height: calc(100vh - 70px);
+}
+
+aside {
+    width: 150px;
+}
+/* #endregion common */
+
+
+
+
+
+/* #region main */
+.main_container {
+    width: calc(100% - 150px);
+    overflow-y: auto;
+}
+/* #endregion main */
+
+
+
+
+/* #region debug */
+
+
+.debug aside {
+    background: red;
+}
+
+.debug .main_container {
+    background-color: palegreen;
+}
+/* #endregion debug */
+
+
