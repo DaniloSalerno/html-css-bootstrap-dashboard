@@ -24,12 +24,14 @@
                     <a class="navbar-brand" href="#">
                         <img src="./assets/img/logo.svg" alt>
                     </a>
-                    <form class="d-flex w-50" role="search">
-                        <input class="form-control me-2 bg-dark-subtle"
-                            type="search"
-                            placeholder="Prova a cercare: Lezioni di Lavarel"
-                            aria-label="Search">
-                    </form>
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 bg-dark-subtle"
+                                type="search"
+                                placeholder="&telrec; Prova a cercare: Lezioni di Lavarel"
+                                aria-label="Search">
+                        </form>
+                    </div>
                     <div class="collapse navbar-collapse" id="navbarScroll">
                         <ul
                             class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
@@ -53,9 +55,9 @@
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <div type="button" class="dropdown-toggle"
+                        <div type="button" class="ms-1"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-bell"></i>
+                            <i class="fa-solid fa-bell text-warning"></i>
                         </div>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><button class="dropdown-item" type="button">Action</button></li>
@@ -128,7 +130,7 @@
 
                         <div class="row gy-4">
 
-                            <div class="col-12 col-lg-6 order-2 order-lg-1">
+                            <div class="col-12 col-lg-6 col-md-4 order-2 order-md-1">
                                 <span class="fs-2">Boolean</span>
                                 <span class="badge rounded-pill">
                                     Piano Blaze
@@ -167,13 +169,13 @@
                             </div>
                             <!-- /.col-12 col-md-4 -->
 
-                            <div class="col-12 col-lg-3 order-3 order-lg-2">
+                            <div class="col-12 col-lg-3 col-md-4 order-3 order-md-2">
                                 <div>Studenti online negli ultimi 30 minuti</div>
                                 <div class="fs-2">125</div>
                             </div>
                             <!-- /.col-12 col-md-4 -->
 
-                            <div class="col-12 col-lg-3 order-1 order-lg-3">
+                            <div class="col-12 col-lg-3 col-md-4 order-1 order-md-3">
                                 Nuovo Studente
                                 <span class="ms-2">
 
@@ -273,16 +275,16 @@
                                 <table class="table table-light">
                                     <thead>
                                         <tr>
-                                            <td scope="col" class="col-8">Nome</td>
-                                            <td scope="col">Data inizio</td>
-                                            <td scope="col">Roi</td>
-                                            <td scope="col">Stato</td>
-                                            <td scope="col">Azioni</td>
+                                            <th scope="col" class="col-7">Nome</th>
+                                            <th scope="col" class="col-2">Data inizio</th>
+                                            <th scope="col" class="col-1">Roi</th>
+                                            <th scope="col" class="col-1">Stato</th>
+                                            <th scope="col" class="col-1 text-center">Azioni</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td scope="row" class="col-1">
+                                            <td scope="row">
                                                 <img height="25px"
                                                     src="./assets/img/class-avatar.jpg"
                                                     alt>
@@ -290,17 +292,52 @@
                                             </td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td>DONE</td>
+                                            <td>
+                                                <span class="badge rounded-pill bg-success">
+                                                Done
+                                                </span>
+                                            </td>
                                             <td class="d-flex">
 
                                                 <button type="button"
-                                                    class="btn btn-light">
+                                                    class="btn btn-light text-secondary border-secondary border-2">
                                                     <i class="fa fa-pencil"
                                                         aria-hidden="true"></i>
                                                 </button>
 
                                                 <button type="button"
-                                                    class="btn btn-light"><i
+                                                    class="btn btn-light text-secondary border-secondary border-2"><i
+                                                        class="fa fa-trash"
+                                                        aria-hidden="true"></i>
+                                                </button>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td scope="row">
+                                                <img height="25px"
+                                                    src="./assets/img/class-avatar.jpg"
+                                                    alt>
+                                                Classe 75
+                                            </td>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <span class="badge rounded-pill bg-success">
+                                                Done
+                                                </span>
+                                            </td>
+                                            <td class="d-flex">
+
+                                                <button type="button"
+                                                    class="btn btn-light text-secondary border-secondary border-2">
+                                                    <i class="fa fa-pencil"
+                                                        aria-hidden="true"></i>
+                                                </button>
+
+                                                <button type="button"
+                                                    class="btn btn-light text-secondary border-secondary border-2"><i
                                                         class="fa fa-trash"
                                                         aria-hidden="true"></i>
                                                 </button>
@@ -317,17 +354,21 @@
                                             </td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td>DONE</td>
+                                            <td>
+                                                <span class="badge rounded-pill bg-warning">
+                                                Process
+                                                </span>
+                                            </td>
                                             <td class="d-flex">
 
                                                 <button type="button"
-                                                    class="btn btn-light">
+                                                    class="btn btn-light text-secondary border-secondary border-2">
                                                     <i class="fa fa-pencil"
                                                         aria-hidden="true"></i>
                                                 </button>
 
                                                 <button type="button"
-                                                    class="btn btn-light"><i
+                                                    class="btn btn-light text-secondary border-secondary border-2"><i
                                                         class="fa fa-trash"
                                                         aria-hidden="true"></i>
                                                 </button>
@@ -344,17 +385,21 @@
                                             </td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td>DONE</td>
+                                            <td>
+                                                <span class="badge rounded-pill bg-success">
+                                                Done
+                                                </span>
+                                            </td>
                                             <td class="d-flex">
 
                                                 <button type="button"
-                                                    class="btn btn-light">
+                                                    class="btn btn-light text-secondary border-secondary border-2">
                                                     <i class="fa fa-pencil"
                                                         aria-hidden="true"></i>
                                                 </button>
 
                                                 <button type="button"
-                                                    class="btn btn-light"><i
+                                                    class="btn btn-light text-secondary border-secondary border-2"><i
                                                         class="fa fa-trash"
                                                         aria-hidden="true"></i>
                                                 </button>
@@ -371,17 +416,21 @@
                                             </td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td>DONE</td>
+                                            <td>
+                                                <span class="badge rounded-pill bg-danger">
+                                                Failed
+                                                </span>
+                                            </td>
                                             <td class="d-flex">
 
                                                 <button type="button"
-                                                    class="btn btn-light">
+                                                    class="btn btn-light text-secondary border-secondary border-2">
                                                     <i class="fa fa-pencil"
                                                         aria-hidden="true"></i>
                                                 </button>
 
                                                 <button type="button"
-                                                    class="btn btn-light"><i
+                                                    class="btn btn-light text-secondary border-secondary border-2"><i
                                                         class="fa fa-trash"
                                                         aria-hidden="true"></i>
                                                 </button>
@@ -398,17 +447,21 @@
                                             </td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td>DONE</td>
+                                            <td>
+                                                <span class="badge rounded-pill bg-success">
+                                                Done
+                                                </span>
+                                            </td>
                                             <td class="d-flex">
 
                                                 <button type="button"
-                                                    class="btn btn-light">
+                                                    class="btn btn-light text-secondary border-secondary border-2">
                                                     <i class="fa fa-pencil"
                                                         aria-hidden="true"></i>
                                                 </button>
 
                                                 <button type="button"
-                                                    class="btn btn-light"><i
+                                                    class="btn btn-light text-secondary border-secondary border-2"><i
                                                         class="fa fa-trash"
                                                         aria-hidden="true"></i>
                                                 </button>
@@ -425,17 +478,21 @@
                                             </td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td>DONE</td>
+                                            <td>
+                                                <span class="badge rounded-pill bg-danger">
+                                                Failed
+                                                </span>
+                                            </td>
                                             <td class="d-flex">
 
                                                 <button type="button"
-                                                    class="btn btn-light">
+                                                    class="btn btn-light text-secondary border-secondary border-2">
                                                     <i class="fa fa-pencil"
                                                         aria-hidden="true"></i>
                                                 </button>
 
                                                 <button type="button"
-                                                    class="btn btn-light"><i
+                                                    class="btn btn-light text-secondary border-secondary border-2"><i
                                                         class="fa fa-trash"
                                                         aria-hidden="true"></i>
                                                 </button>
@@ -452,44 +509,21 @@
                                             </td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td>DONE</td>
+                                            <td>
+                                                <span class="badge rounded-pill bg-success">
+                                                Done
+                                                </span>
+                                            </td>
                                             <td class="d-flex">
 
                                                 <button type="button"
-                                                    class="btn btn-light">
+                                                    class="btn btn-light text-secondary border-secondary border-2">
                                                     <i class="fa fa-pencil"
                                                         aria-hidden="true"></i>
                                                 </button>
 
                                                 <button type="button"
-                                                    class="btn btn-light"><i
-                                                        class="fa fa-trash"
-                                                        aria-hidden="true"></i>
-                                                </button>
-
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td scope="row" class="col-1">
-                                                <img height="25px"
-                                                    src="./assets/img/class-avatar.jpg"
-                                                    alt>
-                                                Classe 75
-                                            </td>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
-                                            <td>DONE</td>
-                                            <td class="d-flex">
-
-                                                <button type="button"
-                                                    class="btn btn-light">
-                                                    <i class="fa fa-pencil"
-                                                        aria-hidden="true"></i>
-                                                </button>
-
-                                                <button type="button"
-                                                    class="btn btn-light"><i
+                                                    class="btn btn-light text-secondary border-secondary border-2"><i
                                                         class="fa fa-trash"
                                                         aria-hidden="true"></i>
                                                 </button>
