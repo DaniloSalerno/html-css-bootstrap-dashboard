@@ -2,6 +2,7 @@
 :root {
     --bs-light: rgb(229, 229, 229);
     --bs-lighter: rgb(248, 249, 250);
+    --bs-primary-dark: rgb(5, 30, 52);
 }
 
 header {
@@ -15,6 +16,8 @@ main {
 
 aside {
     width: 150px;
+    background-image: url("../img/sidebar-bg.png");
+    background-color: var(--bs-primary-dark);
 }
 /* #endregion common */
 
