@@ -20,18 +20,20 @@
         <header
             class="bg-body d-flex align-items-center justify-content-between">
             <nav class="navbar navbar-expand-md bg-white w-100 sticky-top">
+
                 <div class="container-fluid d-flex">
+
                     <a class="navbar-brand" href="#">
                         <img src="./assets/img/logo.svg" alt>
                     </a>
-                    <div class="container-fluid">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2 bg-dark-subtle"
-                                type="search"
-                                placeholder="&telrec; Prova a cercare: Lezioni di Lavarel"
-                                aria-label="Search">
-                        </form>
-                    </div>
+
+                    <form class="d-flex w-50" role="search">
+                        <input class="form-control me-2 bg-dark-subtle"
+                            type="search"
+                            placeholder="&telrec; Prova a cercare: Lezioni di Lavarel"
+                            aria-label="Search">
+                    </form>
+
                     <div class="collapse navbar-collapse" id="navbarScroll">
                         <ul
                             class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
@@ -130,7 +132,8 @@
 
                         <div class="row gy-4">
 
-                            <div class="col-12 col-lg-6 col-md-4 order-2 order-md-1">
+                            <div
+                                class="col-12 col-lg-6 col-md-4 order-2 order-md-1">
                                 <span class="fs-2">Boolean</span>
                                 <span class="badge rounded-pill">
                                     Piano Blaze
@@ -140,12 +143,13 @@
                                     <span class="badge rounded-pill">
                                         3 App
                                     </span>
-    
+
                                     <span>
                                         <i class="fa-solid fa-angles-right"></i>
                                     </span>
-    
-                                    <span class="badge rounded-pill d-inline d-lg-none">
+
+                                    <span
+                                        class="badge rounded-pill d-inline d-lg-none">
                                         <i class="fa fa-plus" aria-hidden="true"></i>
                                     </span>
 
@@ -165,17 +169,19 @@
 
                                     </span>
                                 </div>
-                                
+
                             </div>
                             <!-- /.col-12 col-md-4 -->
 
-                            <div class="col-12 col-lg-3 col-md-4 order-3 order-md-2">
+                            <div
+                                class="col-12 col-lg-3 col-md-4 order-3 order-md-2">
                                 <div>Studenti online negli ultimi 30 minuti</div>
                                 <div class="fs-2">125</div>
                             </div>
                             <!-- /.col-12 col-md-4 -->
 
-                            <div class="col-12 col-lg-3 col-md-4 order-1 order-md-3">
+                            <div
+                                class="col-12 col-lg-3 col-md-4 order-1 order-md-3">
                                 Nuovo Studente
                                 <span class="ms-2">
 
@@ -191,59 +197,125 @@
                                         aria-labelledby="offcanvasRightLabel">
                                         <div class="offcanvas-header">
                                             <h5 class="offcanvas-title"
-                                                id="offcanvasRightLabel">Offcanvas
-                                                right</h5>
+                                                id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                             <button type="button"
                                                 class="btn-close"
                                                 data-bs-dismiss="offcanvas"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="offcanvas-body">
-                                            
+
                                             <form class="row g-3">
                                                 <div class="col-md-6">
-                                                  <label for="inputEmail4" class="form-label">Email</label>
-                                                  <input type="email" class="form-control" id="inputEmail4">
+                                                    <label for="name"
+                                                        class="form-label">Nome</label>
+                                                    <input type="text"
+                                                        class="form-control"
+                                                        id="name">
                                                 </div>
                                                 <div class="col-md-6">
-                                                  <label for="inputPassword4" class="form-label">Password</label>
-                                                  <input type="password" class="form-control" id="inputPassword4">
-                                                </div>
-                                                <div class="col-12">
-                                                  <label for="inputAddress" class="form-label">Address</label>
-                                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                                </div>
-                                                <div class="col-12">
-                                                  <label for="inputAddress2" class="form-label">Address 2</label>
-                                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                    <label for="surname"
+                                                        class="form-label">Cognome</label>
+                                                    <input type="text"
+                                                        class="form-control"
+                                                        id="surname">
                                                 </div>
                                                 <div class="col-md-6">
-                                                  <label for="inputCity" class="form-label">City</label>
-                                                  <input type="text" class="form-control" id="inputCity">
+                                                    <label for="email1"
+                                                        class="form-label">Email</label>
+                                                    
+
+                                                        <div class="input-group flex-nowrap">
+                                                            <span class="input-group-text" id="addon-wrapping">@</span>
+                                                            <input type="text" class="form-control"
+                                                            id="email1" aria-label="Email" aria-describedby="addon-wrapping">
+                                                        </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6">
+                                                    <label for="inputPassword4"
+                                                        class="form-label">Password</label>
+                                                    <input type="password"
+                                                        class="form-control"
+                                                        id="inputPassword4">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="email2"
+                                                        class="form-label">Email</label>
+                                                    
+
+                                                        <div class="input-group flex-nowrap">
+                                                            <span class="input-group-text" id="addon-wrapping">@</span>
+                                                            <input type="text" class="form-control"
+                                                            id="email2" aria-label="Email" aria-describedby="addon-wrapping">
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputPassword4"
+                                                        class="form-label">Password</label>
+                                                    <input type="password"
+                                                        class="form-control"
+                                                        id="inputPassword4">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="indirizzo"
+                                                        class="form-label">Indirizzo</label>
+                                                    <input type="text"
+                                                        class="form-control"
+                                                        id="indirizzo">
+                                                </div>
+                                            
+                                                <div class="col-md-6">
+                                                    <label for="città"
+                                                        class="form-label">Città</label>
+                                                    <input type="text"
+                                                        class="form-control"
+                                                        id="città">
                                                 </div>
                                                 <div class="col-md-4">
-                                                  <label for="inputState" class="form-label">State</label>
-                                                  <select id="inputState" class="form-select">
-                                                    <option selected>Choose...</option>
-                                                    <option>...</option>
-                                                  </select>
+                                                    <label for="state"
+                                                        class="form-label">Stato</label>
+                                                    <select id="state"
+                                                        class="form-select">
+                                                        <option selected>Scegli...</option>
+                                                        <option>...</option>
+                                                    </select>
                                                 </div>
                                                 <div class="col-md-2">
-                                                  <label for="inputZip" class="form-label">Zip</label>
-                                                  <input type="text" class="form-control" id="inputZip">
+                                                    <label for="cap"
+                                                        class="form-label">Cap</label>
+                                                    <input type="text"
+                                                        class="form-control"
+                                                        id="cap">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="formFile" class="form-label">Foto</label>
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+                                                  
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            id="check-out">
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="check-out">
+                                                            Seleziona per proseguire
+                                                        </label>
+                                                    </div>
                                                 </div>
                                                 <div class="col-12">
-                                                  <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                    <label class="form-check-label" for="gridCheck">
-                                                      Check me out
-                                                    </label>
-                                                  </div>
+                                                    <button type="submit"
+                                                        class="btn btn-primary">Salva
+                                                    </button>
+
+                                                    <button type="reset"
+                                                    class="btn btn-warning">Reset
+                                                </button>
                                                 </div>
-                                                <div class="col-12">
-                                                  <button type="submit" class="btn btn-primary">Sign in</button>
-                                                </div>
-                                              </form>
+                                            </form>
 
                                         </div>
                                     </div>
@@ -275,11 +347,16 @@
                                 <table class="table table-light">
                                     <thead>
                                         <tr>
-                                            <th scope="col" class="col-7">Nome</th>
-                                            <th scope="col" class="col-2">Data inizio</th>
-                                            <th scope="col" class="col-1">Roi</th>
+                                            <th scope="col"
+                                                class="col-7 col-md-6">Nome</th>
+                                            <th scope="col"
+                                                class="col-2 col-md-3 d-none d-md-table-cell">Data
+                                                inizio</th>
+                                            <th scope="col"
+                                                class="col-1 d-none d-md-table-cell">Roi</th>
                                             <th scope="col" class="col-1">Stato</th>
-                                            <th scope="col" class="col-1 text-center">Azioni</th>
+                                            <th scope="col"
+                                                class="col-1 text-center">Azioni</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -290,11 +367,13 @@
                                                     alt>
                                                 Classe 75
                                             </td>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">15
+                                                Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
-                                                <span class="badge rounded-pill bg-success">
-                                                Done
+                                                <span
+                                                    class="badge rounded-pill bg-success">
+                                                    Done
                                                 </span>
                                             </td>
                                             <td class="d-flex">
@@ -321,11 +400,13 @@
                                                     alt>
                                                 Classe 75
                                             </td>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">15
+                                                Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
-                                                <span class="badge rounded-pill bg-success">
-                                                Done
+                                                <span
+                                                    class="badge rounded-pill bg-success">
+                                                    Done
                                                 </span>
                                             </td>
                                             <td class="d-flex">
@@ -352,11 +433,13 @@
                                                     alt>
                                                 Classe 75
                                             </td>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">15
+                                                Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
-                                                <span class="badge rounded-pill bg-warning">
-                                                Process
+                                                <span
+                                                    class="badge rounded-pill bg-warning">
+                                                    Process
                                                 </span>
                                             </td>
                                             <td class="d-flex">
@@ -383,11 +466,13 @@
                                                     alt>
                                                 Classe 75
                                             </td>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">15
+                                                Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
-                                                <span class="badge rounded-pill bg-success">
-                                                Done
+                                                <span
+                                                    class="badge rounded-pill bg-success">
+                                                    Done
                                                 </span>
                                             </td>
                                             <td class="d-flex">
@@ -414,11 +499,13 @@
                                                     alt>
                                                 Classe 75
                                             </td>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">15
+                                                Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
-                                                <span class="badge rounded-pill bg-danger">
-                                                Failed
+                                                <span
+                                                    class="badge rounded-pill bg-danger">
+                                                    Failed
                                                 </span>
                                             </td>
                                             <td class="d-flex">
@@ -445,11 +532,13 @@
                                                     alt>
                                                 Classe 75
                                             </td>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">15
+                                                Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
-                                                <span class="badge rounded-pill bg-success">
-                                                Done
+                                                <span
+                                                    class="badge rounded-pill bg-success">
+                                                    Done
                                                 </span>
                                             </td>
                                             <td class="d-flex">
@@ -476,11 +565,13 @@
                                                     alt>
                                                 Classe 75
                                             </td>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">15
+                                                Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
-                                                <span class="badge rounded-pill bg-danger">
-                                                Failed
+                                                <span
+                                                    class="badge rounded-pill bg-danger">
+                                                    Failed
                                                 </span>
                                             </td>
                                             <td class="d-flex">
@@ -507,11 +598,13 @@
                                                     alt>
                                                 Classe 75
                                             </td>
-                                            <td>15 Feb 2021</td>
-                                            <td>20%</td>
+                                            <td class="d-none d-md-table-cell">15
+                                                Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
                                             <td>
-                                                <span class="badge rounded-pill bg-success">
-                                                Done
+                                                <span
+                                                    class="badge rounded-pill bg-success">
+                                                    Done
                                                 </span>
                                             </td>
                                             <td class="d-flex">
