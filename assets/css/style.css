@@ -50,6 +50,18 @@ td button {
 
 
 
+
+/* #region effects */
+
+aside a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+/* #endregion effects */
+
+
+
 /* #region debug */
 
 
