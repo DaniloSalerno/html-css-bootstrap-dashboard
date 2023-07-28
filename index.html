@@ -18,59 +18,78 @@
     <body class="debug">
 
         <header
-            class="bg-body d-flex align-items-center justify-content-between">
-            <nav class="navbar navbar-expand-md bg-white w-100 sticky-top">
+            class="d-flex align-items-center justify-content-between py-4 ">
+            <nav class="navbar navbar-expand-md bg-white sticky-top p-0 w-100">
 
-                <div class="container-fluid d-flex">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.svg" alt>
+                </a>
 
-                    <a class="navbar-brand" href="#">
-                        <img src="./assets/img/logo.svg" alt>
-                    </a>
+                <form class="d-flex w-50" role="search">
+                    <input class="form-control me-2 bg-secondary-subtle"
+                        type="search"
+                        placeholder="&telrec; Prova a cercare: Lezioni di Lavarel"
+                        aria-label="Search">
+                </form>
 
-                    <form class="d-flex w-50" role="search">
-                        <input class="form-control me-2 bg-dark-subtle"
-                            type="search"
-                            placeholder="&telrec; Prova a cercare: Lezioni di Lavarel"
-                            aria-label="Search">
-                    </form>
-
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul
-                            class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
-                            style="--bs-scroll-height: 100px;">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page"
-                                    href="#">
-                                    <i class="fa-solid fa-list"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-circle-question"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn-group">
-                        <div type="button" class="ms-2 me-3"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fa-solid fa-bell text-warning"></i>
-                        </div>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><button class="dropdown-item" type="button">Action</button></li>
-                            <li><button class="dropdown-item" type="button">Another
-                                    action</button></li>
-                            <li><button class="dropdown-item" type="button">Something
-                                    else here</button></li>
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul
+                        class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+                        style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="#">
+                                <i class="fa-solid fa-list"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+
+                <div class="btn-group">
+
+                    <div type="button" class="ms-2 me-3"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell text-warning"></i>
+                    </div>
+
+                    <ul class="dropdown-menu dropdown-menu-end">
+
+                        <li>
+                            <button class="dropdown-item" type="button">
+                                Profilo
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="dropdown-item" type="button">
+                                Fatturazione
+                            </button>
+                        </li>
+
+                        <li>
+                            <button class="dropdown-item" type="button">
+                                Logout
+                            </button>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- /.btn-group -->
+
             </nav>
+            <!-- /nav -->
+
         </header>
         <!-- /header -->
 
@@ -192,16 +211,19 @@
                                         <i class="fa fa-plus" aria-hidden="true"></i>
                                     </button>
 
-                                    <div class="offcanvas offcanvas-end w-50"
+                                    <div
+                                        class="offcanvas offcanvas-end ms_w-100 ms_w-lg-50"
                                         tabindex="-1" id="offcanvasRight"
                                         aria-labelledby="offcanvasRightLabel">
                                         <div class="offcanvas-header">
                                             <h5 class="offcanvas-title"
-                                                id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                                id="offcanvasRightLabel">Inserisci
+                                                un nuovo studente</h5>
                                             <button type="button"
                                                 class="btn-close"
                                                 data-bs-dismiss="offcanvas"
-                                                aria-label="Close"></button>
+                                                aria-label="Close">
+                                            </button>
                                         </div>
                                         <div class="offcanvas-body">
 
@@ -223,15 +245,20 @@
                                                 <div class="col-md-6">
                                                     <label for="email1"
                                                         class="form-label">Email</label>
-                                                    
 
-                                                        <div class="input-group flex-nowrap">
-                                                            <span class="input-group-text" id="addon-wrapping">@</span>
-                                                            <input type="text" class="form-control"
-                                                            id="email1" aria-label="Email" aria-describedby="addon-wrapping">
-                                                        </div>
+                                                    <div
+                                                        class="input-group flex-nowrap">
+                                                        <span
+                                                            class="input-group-text"
+                                                            id="addon-wrapping">@</span>
+                                                        <input type="text"
+                                                            class="form-control"
+                                                            id="email1"
+                                                            aria-label="Email"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
                                                 </div>
-                                                
+
                                                 <div class="col-md-6">
                                                     <label for="inputPassword4"
                                                         class="form-label">Password</label>
@@ -242,13 +269,18 @@
                                                 <div class="col-md-6">
                                                     <label for="email2"
                                                         class="form-label">Email</label>
-                                                    
 
-                                                        <div class="input-group flex-nowrap">
-                                                            <span class="input-group-text" id="addon-wrapping">@</span>
-                                                            <input type="text" class="form-control"
-                                                            id="email2" aria-label="Email" aria-describedby="addon-wrapping">
-                                                        </div>
+                                                    <div
+                                                        class="input-group flex-nowrap">
+                                                        <span
+                                                            class="input-group-text"
+                                                            id="addon-wrapping">@</span>
+                                                        <input type="text"
+                                                            class="form-control"
+                                                            id="email2"
+                                                            aria-label="Email"
+                                                            aria-describedby="addon-wrapping">
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="inputPassword4"
@@ -264,7 +296,7 @@
                                                         class="form-control"
                                                         id="indirizzo">
                                                 </div>
-                                            
+
                                                 <div class="col-md-6">
                                                     <label for="città"
                                                         class="form-label">Città</label>
@@ -289,10 +321,13 @@
                                                         id="cap">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="formFile" class="form-label">Foto</label>
-                                                    <input class="form-control" type="file" id="formFile">
+                                                    <label for="formFile"
+                                                        class="form-label">Foto</label>
+                                                    <input class="form-control"
+                                                        type="file"
+                                                        id="formFile">
                                                 </div>
-                                                  
+
                                                 <div class="col-12">
                                                     <div class="form-check">
                                                         <input
@@ -302,7 +337,8 @@
                                                         <label
                                                             class="form-check-label"
                                                             for="check-out">
-                                                            Seleziona per proseguire
+                                                            Seleziona per
+                                                            proseguire
                                                         </label>
                                                     </div>
                                                 </div>
@@ -312,8 +348,8 @@
                                                     </button>
 
                                                     <button type="reset"
-                                                    class="btn btn-warning">Reset
-                                                </button>
+                                                        class="btn btn-warning">Reset
+                                                    </button>
                                                 </div>
                                             </form>
 
@@ -344,289 +380,312 @@
                                     <h3>Prossime classi</h3>
                                 </div>
 
-                                <table class="table table-light">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col"
-                                                class="col-7 col-md-6">Nome</th>
-                                            <th scope="col"
-                                                class="col-2 col-md-3 d-none d-md-table-cell">Data
-                                                inizio</th>
-                                            <th scope="col"
-                                                class="col-1 d-none d-md-table-cell">Roi</th>
-                                            <th scope="col" class="col-1">Stato</th>
-                                            <th scope="col"
-                                                class="col-1 text-center">Azioni</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td scope="row">
-                                                <img height="25px"
-                                                    src="./assets/img/class-avatar.jpg"
-                                                    alt>
-                                                Classe 75
-                                            </td>
-                                            <td class="d-none d-md-table-cell">15
-                                                Feb 2021</td>
-                                            <td class="d-none d-md-table-cell">20%</td>
-                                            <td>
-                                                <span
-                                                    class="badge rounded-pill bg-success">
-                                                    Done
-                                                </span>
-                                            </td>
-                                            <td class="d-flex">
+                                <div class="wrapper px-4">
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2">
-                                                    <i class="fa fa-pencil"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                    <table class="table table-hover align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col"
+                                                    class="col-7 col-md-6">Nome</th>
+                                                <th scope="col"
+                                                    class="col-2 col-md-3 d-none d-md-table-cell">Data
+                                                    inizio</th>
+                                                <th scope="col"
+                                                    class="col-1 d-none d-md-table-cell">Roi</th>
+                                                <th scope="col" class="col-1">Stato</th>
+                                                <th scope="col"
+                                                    class="col-1 text-center">Azioni</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">
+                                                    <img height="30px"
+                                                        src="./assets/img/class-avatar.jpg"
+                                                        alt>
+                                                    Classe 75
+                                                </td>
+                                                <td
+                                                    class="d-none d-md-table-cell">15
+                                                    Feb 2021</td>
+                                                <td
+                                                    class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <span
+                                                        class="badge rounded-pill bg-success">
+                                                        Done
+                                                    </span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2"><i
-                                                        class="fa fa-trash"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-secondary border-secondary border-2">
+                                                        <i class="fa fa-pencil"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                            </td>
-                                        </tr>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2"><i
+                                                            class="fa fa-trash"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                        <tr>
-                                            <td scope="row">
-                                                <img height="25px"
-                                                    src="./assets/img/class-avatar.jpg"
-                                                    alt>
-                                                Classe 75
-                                            </td>
-                                            <td class="d-none d-md-table-cell">15
-                                                Feb 2021</td>
-                                            <td class="d-none d-md-table-cell">20%</td>
-                                            <td>
-                                                <span
-                                                    class="badge rounded-pill bg-success">
-                                                    Done
-                                                </span>
-                                            </td>
-                                            <td class="d-flex">
+                                                </td>
+                                            </tr>
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2">
-                                                    <i class="fa fa-pencil"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                            <tr>
+                                                <td scope="row">
+                                                    <img height="30px"
+                                                        src="./assets/img/class-avatar.jpg"
+                                                        alt>
+                                                    Classe 76
+                                                </td>
+                                                <td
+                                                    class="d-none d-md-table-cell">15
+                                                    Feb 2021</td>
+                                                <td
+                                                    class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <span
+                                                        class="badge rounded-pill bg-success">
+                                                        Done
+                                                    </span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2"><i
-                                                        class="fa fa-trash"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2">
+                                                        <i class="fa fa-pencil"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                            </td>
-                                        </tr>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2"><i
+                                                            class="fa fa-trash"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                        <tr>
-                                            <td scope="row" class="col-1">
-                                                <img height="25px"
-                                                    src="./assets/img/class-avatar.jpg"
-                                                    alt>
-                                                Classe 75
-                                            </td>
-                                            <td class="d-none d-md-table-cell">15
-                                                Feb 2021</td>
-                                            <td class="d-none d-md-table-cell">20%</td>
-                                            <td>
-                                                <span
-                                                    class="badge rounded-pill bg-warning">
-                                                    Process
-                                                </span>
-                                            </td>
-                                            <td class="d-flex">
+                                                </td>
+                                            </tr>
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2">
-                                                    <i class="fa fa-pencil"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                            <tr>
+                                                <td scope="row" class="col-1">
+                                                    <img height="30px"
+                                                        src="./assets/img/class-avatar.jpg"
+                                                        alt>
+                                                    Classe 77
+                                                </td>
+                                                <td
+                                                    class="d-none d-md-table-cell">15
+                                                    Feb 2021</td>
+                                                <td
+                                                    class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <span
+                                                        class="badge rounded-pill bg-warning">
+                                                        Process
+                                                    </span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2"><i
-                                                        class="fa fa-trash"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2">
+                                                        <i class="fa fa-pencil"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                            </td>
-                                        </tr>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2"><i
+                                                            class="fa fa-trash"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                        <tr>
-                                            <td scope="row" class="col-1">
-                                                <img height="25px"
-                                                    src="./assets/img/class-avatar.jpg"
-                                                    alt>
-                                                Classe 75
-                                            </td>
-                                            <td class="d-none d-md-table-cell">15
-                                                Feb 2021</td>
-                                            <td class="d-none d-md-table-cell">20%</td>
-                                            <td>
-                                                <span
-                                                    class="badge rounded-pill bg-success">
-                                                    Done
-                                                </span>
-                                            </td>
-                                            <td class="d-flex">
+                                                </td>
+                                            </tr>
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2">
-                                                    <i class="fa fa-pencil"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                            <tr>
+                                                <td scope="row" class="col-1">
+                                                    <img height="30px"
+                                                        src="./assets/img/class-avatar.jpg"
+                                                        alt>
+                                                    Classe 78
+                                                </td>
+                                                <td
+                                                    class="d-none d-md-table-cell">15
+                                                    Feb 2021</td>
+                                                <td
+                                                    class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <span
+                                                        class="badge rounded-pill bg-success">
+                                                        Done
+                                                    </span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2"><i
-                                                        class="fa fa-trash"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2">
+                                                        <i class="fa fa-pencil"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                            </td>
-                                        </tr>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2"><i
+                                                            class="fa fa-trash"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                        <tr>
-                                            <td scope="row" class="col-1">
-                                                <img height="25px"
-                                                    src="./assets/img/class-avatar.jpg"
-                                                    alt>
-                                                Classe 75
-                                            </td>
-                                            <td class="d-none d-md-table-cell">15
-                                                Feb 2021</td>
-                                            <td class="d-none d-md-table-cell">20%</td>
-                                            <td>
-                                                <span
-                                                    class="badge rounded-pill bg-danger">
-                                                    Failed
-                                                </span>
-                                            </td>
-                                            <td class="d-flex">
+                                                </td>
+                                            </tr>
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2">
-                                                    <i class="fa fa-pencil"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                            <tr>
+                                                <td scope="row" class="col-1">
+                                                    <img height="30px"
+                                                        src="./assets/img/class-avatar.jpg"
+                                                        alt>
+                                                    Classe 79
+                                                </td>
+                                                <td
+                                                    class="d-none d-md-table-cell">15
+                                                    Feb 2021</td>
+                                                <td
+                                                    class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <span
+                                                        class="badge rounded-pill bg-danger">
+                                                        Failed
+                                                    </span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2"><i
-                                                        class="fa fa-trash"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2">
+                                                        <i class="fa fa-pencil"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                            </td>
-                                        </tr>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2"><i
+                                                            class="fa fa-trash"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                        <tr>
-                                            <td scope="row" class="col-1">
-                                                <img height="25px"
-                                                    src="./assets/img/class-avatar.jpg"
-                                                    alt>
-                                                Classe 75
-                                            </td>
-                                            <td class="d-none d-md-table-cell">15
-                                                Feb 2021</td>
-                                            <td class="d-none d-md-table-cell">20%</td>
-                                            <td>
-                                                <span
-                                                    class="badge rounded-pill bg-success">
-                                                    Done
-                                                </span>
-                                            </td>
-                                            <td class="d-flex">
+                                                </td>
+                                            </tr>
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2">
-                                                    <i class="fa fa-pencil"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                            <tr>
+                                                <td scope="row" class="col-1">
+                                                    <img height="30px"
+                                                        src="./assets/img/class-avatar.jpg"
+                                                        alt>
+                                                    Classe 80
+                                                </td>
+                                                <td
+                                                    class="d-none d-md-table-cell">15
+                                                    Feb 2021</td>
+                                                <td
+                                                    class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <span
+                                                        class="badge rounded-pill bg-success">
+                                                        Done
+                                                    </span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2"><i
-                                                        class="fa fa-trash"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2">
+                                                        <i class="fa fa-pencil"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                            </td>
-                                        </tr>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2"><i
+                                                            class="fa fa-trash"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                        <tr>
-                                            <td scope="row" class="col-1">
-                                                <img height="25px"
-                                                    src="./assets/img/class-avatar.jpg"
-                                                    alt>
-                                                Classe 75
-                                            </td>
-                                            <td class="d-none d-md-table-cell">15
-                                                Feb 2021</td>
-                                            <td class="d-none d-md-table-cell">20%</td>
-                                            <td>
-                                                <span
-                                                    class="badge rounded-pill bg-danger">
-                                                    Failed
-                                                </span>
-                                            </td>
-                                            <td class="d-flex">
+                                                </td>
+                                            </tr>
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2">
-                                                    <i class="fa fa-pencil"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                            <tr>
+                                                <td scope="row" class="col-1">
+                                                    <img height="30px"
+                                                        src="./assets/img/class-avatar.jpg"
+                                                        alt>
+                                                    Classe 81
+                                                </td>
+                                                <td
+                                                    class="d-none d-md-table-cell">15
+                                                    Feb 2021</td>
+                                                <td
+                                                    class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <span
+                                                        class="badge rounded-pill bg-danger">
+                                                        Failed
+                                                    </span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2"><i
-                                                        class="fa fa-trash"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2">
+                                                        <i class="fa fa-pencil"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                            </td>
-                                        </tr>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2"><i
+                                                            class="fa fa-trash"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                        <tr>
-                                            <td scope="row" class="col-1">
-                                                <img height="25px"
-                                                    src="./assets/img/class-avatar.jpg"
-                                                    alt>
-                                                Classe 75
-                                            </td>
-                                            <td class="d-none d-md-table-cell">15
-                                                Feb 2021</td>
-                                            <td class="d-none d-md-table-cell">20%</td>
-                                            <td>
-                                                <span
-                                                    class="badge rounded-pill bg-success">
-                                                    Done
-                                                </span>
-                                            </td>
-                                            <td class="d-flex">
+                                                </td>
+                                            </tr>
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2">
-                                                    <i class="fa fa-pencil"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                            <tr>
+                                                <td scope="row" class="col-1">
+                                                    <img height="30px"
+                                                        src="./assets/img/class-avatar.jpg"
+                                                        alt>
+                                                    Classe 82
+                                                </td>
+                                                <td
+                                                    class="d-none d-md-table-cell">15
+                                                    Feb 2021</td>
+                                                <td
+                                                    class="d-none d-md-table-cell">20%</td>
+                                                <td>
+                                                    <span
+                                                        class="badge rounded-pill bg-success">
+                                                        Done
+                                                    </span>
+                                                </td>
+                                                <td class="d-flex">
 
-                                                <button type="button"
-                                                    class="btn btn-light text-secondary border-secondary border-2"><i
-                                                        class="fa fa-trash"
-                                                        aria-hidden="true"></i>
-                                                </button>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2">
+                                                        <i class="fa fa-pencil"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                            </td>
-                                        </tr>
+                                                    <button type="button"
+                                                        class="btn  btn-outline-secondary border-secondary border-2"><i
+                                                            class="fa fa-trash"
+                                                            aria-hidden="true"></i>
+                                                    </button>
 
-                                    </tbody>
+                                                </td>
+                                            </tr>
 
-                                </table>
+                                        </tbody>
+
+                                    </table>
+                                    <!-- /table -->
+
+                                </div>
+                                <!-- /.wrapper -->
+
                             </div>
                             <!-- /#classes -->
 
@@ -657,14 +716,11 @@
                                         <div id="flush-collapseOne"
                                             class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder
-                                                content for this accordion,
-                                                which is intended to
-                                                demonstrate
-                                                the <code>.accordion-flush</code>
-                                                class. This is the first
-                                                item's
-                                                accordion body.</div>
+                                            <div class="accordion-body">
+                                                Clicca sul <i class="fa fa-plus"
+                                                    aria-hidden="true"></i>
+                                                in alto nella sezione blu.
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
@@ -684,17 +740,10 @@
                                         <div id="flush-collapseTwo"
                                             class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder
-                                                content for this accordion,
-                                                which is intended to
-                                                demonstrate
-                                                the <code>.accordion-flush</code>
-                                                class. This is the second
-                                                item's
-                                                accordion body. Let's
-                                                imagine
-                                                this being filled with some
-                                                actual content.</div>
+                                            <div class="accordion-body">
+                                                Clicca sull'icona della
+                                                campanella.
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
