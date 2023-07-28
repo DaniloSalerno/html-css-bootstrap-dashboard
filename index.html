@@ -18,11 +18,12 @@
     <body class="debug">
 
         <header
-            class="py-3 ">
+            class="d-flex flex-column justify-content-center">
             <nav class="navbar navbar-expand-md bg-white p-0">
 
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/img/logo.svg" alt>
+                    <img class="d-none d-lg-inline-block" src="./assets/img/logo.svg" alt="logo boolean">
+                    <img class="d-lg-none ms-4" width="40px" src="./assets/img/mobile-logo.png" alt="logo boolean">
                 </a>
 
                 <form class="flex-grow-1" role="search">
@@ -155,12 +156,12 @@
                                 class="col-12 col-lg-6 col-md-4 order-2 order-md-1">
                                 <span class="fs-2">Boolean</span>
                                 <span class="badge rounded-pill">
-                                    Piano Blaze
+                                    <a href="#" class="text-decoration-none text-light">Piano Blaze</a>
                                 </span>
 
                                 <div>
                                     <span class="badge rounded-pill">
-                                        3 App
+                                        <div>3 App</div>
                                     </span>
 
                                     <span>
@@ -175,15 +176,24 @@
                                     <span class="d-none d-lg-inline">
 
                                         <span class="badge rounded-pill">
-                                            Boolean mobile app
+                                            <a href="#" class="text-decoration-none text-light">
+                                                Boolean mobile app
+                                            </a>
+                                            
                                         </span>
 
                                         <span class="badge rounded-pill">
-                                            Boolean web app
+                                            <a href="#" class="text-decoration-none text-light">
+                                                Boolean web app
+                                            </a>
+                                            
                                         </span>
 
                                         <span class="badge rounded-pill">
-                                            Boolean blog app
+                                            <a href="#" class="text-decoration-none text-light">
+                                                Boolean blog app
+                                            </a>
+                                            
                                         </span>
 
                                     </span>
@@ -233,17 +243,17 @@
                                                         class="form-label">Nome</label>
                                                     <input type="text"
                                                         class="form-control"
-                                                        id="name">
+                                                        id="name" required>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="surname"
                                                         class="form-label">Cognome</label>
                                                     <input type="text"
                                                         class="form-control"
-                                                        id="surname">
+                                                        id="surname" required>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="email1"
+                                                    <label for="email"
                                                         class="form-label">Email</label>
 
                                                     <div
@@ -253,48 +263,26 @@
                                                             id="addon-wrapping">@</span>
                                                         <input type="text"
                                                             class="form-control"
-                                                            id="email1"
+                                                            id="email"
                                                             aria-label="Email"
-                                                            aria-describedby="addon-wrapping">
+                                                            aria-describedby="addon-wrapping" required>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-md-6">
-                                                    <label for="inputPassword4"
+                                                    <label for="password"
                                                         class="form-label">Password</label>
                                                     <input type="password"
                                                         class="form-control"
-                                                        id="inputPassword4">
+                                                        id="password" required>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <label for="email2"
-                                                        class="form-label">Email</label>
-
-                                                    <div
-                                                        class="input-group flex-nowrap">
-                                                        <span
-                                                            class="input-group-text"
-                                                            id="addon-wrapping">@</span>
-                                                        <input type="text"
-                                                            class="form-control"
-                                                            id="email2"
-                                                            aria-label="Email"
-                                                            aria-describedby="addon-wrapping">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="inputPassword4"
-                                                        class="form-label">Password</label>
-                                                    <input type="password"
-                                                        class="form-control"
-                                                        id="inputPassword4">
-                                                </div>
+                                            
                                                 <div class="col-12">
                                                     <label for="indirizzo"
                                                         class="form-label">Indirizzo</label>
                                                     <input type="text"
                                                         class="form-control"
-                                                        id="indirizzo">
+                                                        id="indirizzo" required>
                                                 </div>
 
                                                 <div class="col-md-6">
@@ -302,7 +290,7 @@
                                                         class="form-label">Città</label>
                                                     <input type="text"
                                                         class="form-control"
-                                                        id="città">
+                                                        id="città" required>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label for="state"
@@ -318,14 +306,14 @@
                                                         class="form-label">Cap</label>
                                                     <input type="text"
                                                         class="form-control"
-                                                        id="cap">
+                                                        id="cap"required>
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="formFile"
                                                         class="form-label">Foto</label>
                                                     <input class="form-control"
                                                         type="file"
-                                                        id="formFile">
+                                                        id="formFile" required>
                                                 </div>
 
                                                 <div class="col-12">

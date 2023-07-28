@@ -31,6 +31,10 @@ aside {
     width: 100%;
 }
 
+#banner .badge:hover {
+    transition: background-color 0.3s;
+    background-color: var(--bs-primary-darker);
+}
 
 
 /* #region main */
