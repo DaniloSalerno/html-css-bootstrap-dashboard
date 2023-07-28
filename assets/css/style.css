@@ -17,30 +17,18 @@ main {
 }
 
 aside {
-    position: sticky;
     background-image: url("../img/sidebar-bg.png");
     background-color: var(--bs-primary-darker);
 }
 /* #endregion common */
 
-#banner .offcanvas.offcanvas-end.ms_w-100 {
-    width: 100%;
-}
 
-#banner .offcanvas.offcanvas-end.ms_w-lg-50 {
-    width: 100%;
-}
-
-#banner .badge:hover {
-    transition: background-color 0.3s;
-    background-color: var(--bs-primary-darker);
-}
 
 
 /* #region main */
-.main_container {
+
+#banner .offcanvas.offcanvas-end.ms_w-100 {
     width: 100%;
-    overflow-y: auto;
 }
 
 #banner {
@@ -69,6 +57,12 @@ aside a:hover {
     transition: background-color 0.3s;
 }
 
+
+#banner .badge:hover {
+    transition: background-color 0.3s;
+    background-color: var(--bs-primary-darker);
+}
+
 /* #endregion effects */
 
 
@@ -77,15 +71,3 @@ aside a:hover {
         width: 50%;
     }
 }
-
-
-
-
-
-/* #region debug */
-
-
-
-/* #endregion debug */
-
-

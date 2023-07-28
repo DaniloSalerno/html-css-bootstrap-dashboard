@@ -144,7 +144,7 @@
             </aside>
             <!-- /aside -->
 
-            <div class="main_container h-100">
+            <div class="main_container w-100 overflow-y-auto">
 
                 <div id="banner" class="text-light py-4">
 
@@ -225,16 +225,22 @@
                                         class="offcanvas offcanvas-end ms_w-100 ms_w-lg-50"
                                         tabindex="-1" id="offcanvasRight"
                                         aria-labelledby="offcanvasRightLabel">
+
                                         <div class="offcanvas-header">
+
                                             <h5 class="offcanvas-title"
                                                 id="offcanvasRightLabel">Inserisci
-                                                un nuovo studente</h5>
+                                                un nuovo studente
+                                            </h5>
+
                                             <button type="button"
                                                 class="btn-close"
                                                 data-bs-dismiss="offcanvas"
                                                 aria-label="Close">
                                             </button>
+
                                         </div>
+
                                         <div class="offcanvas-body">
 
                                             <form class="row g-3">
@@ -278,19 +284,19 @@
                                                 </div>
                                             
                                                 <div class="col-12">
-                                                    <label for="indirizzo"
+                                                    <label for="address"
                                                         class="form-label">Indirizzo</label>
                                                     <input type="text"
                                                         class="form-control"
-                                                        id="indirizzo" required>
+                                                        id="address" required>
                                                 </div>
 
                                                 <div class="col-md-6">
-                                                    <label for="città"
+                                                    <label for="city"
                                                         class="form-label">Città</label>
                                                     <input type="text"
                                                         class="form-control"
-                                                        id="città" required>
+                                                        id="city" required>
                                                 </div>
                                                 <div class="col-md-4">
                                                     <label for="state"
@@ -298,7 +304,9 @@
                                                     <select id="state"
                                                         class="form-select">
                                                         <option selected>Scegli...</option>
-                                                        <option>...</option>
+                                                        <option value="it">Italia</option>
+                                                        <option value="es">Spagna</option>
+                                                        <option value="fr">Francia</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-md-2">
@@ -388,10 +396,12 @@
                                         <tbody>
                                             <tr>
                                                 <td scope="row">
-                                                    <img height="30px"
-                                                        src="./assets/img/class-avatar.jpg"
-                                                        alt>
-                                                    Classe 75
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img height="30px"
+                                                            src="./assets/img/class-avatar.jpg"
+                                                            alt>
+                                                        <span>Classe 75</span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="d-none d-md-table-cell">15
@@ -423,10 +433,12 @@
 
                                             <tr>
                                                 <td scope="row">
-                                                    <img height="30px"
-                                                        src="./assets/img/class-avatar.jpg"
-                                                        alt>
-                                                    Classe 76
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img height="30px"
+                                                            src="./assets/img/class-avatar.jpg"
+                                                            alt>
+                                                        <span>Classe 76</span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="d-none d-md-table-cell">15
@@ -458,10 +470,12 @@
 
                                             <tr>
                                                 <td scope="row" class="col-1">
-                                                    <img height="30px"
-                                                        src="./assets/img/class-avatar.jpg"
-                                                        alt>
-                                                    Classe 77
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img height="30px"
+                                                            src="./assets/img/class-avatar.jpg"
+                                                            alt>
+                                                        <span>Classe 77</span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="d-none d-md-table-cell">15
@@ -493,10 +507,12 @@
 
                                             <tr>
                                                 <td scope="row" class="col-1">
-                                                    <img height="30px"
-                                                        src="./assets/img/class-avatar.jpg"
-                                                        alt>
-                                                    Classe 78
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img height="30px"
+                                                            src="./assets/img/class-avatar.jpg"
+                                                            alt>
+                                                        <span>Classe 78</span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="d-none d-md-table-cell">15
@@ -528,10 +544,12 @@
 
                                             <tr>
                                                 <td scope="row" class="col-1">
-                                                    <img height="30px"
-                                                        src="./assets/img/class-avatar.jpg"
-                                                        alt>
-                                                    Classe 79
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img height="30px"
+                                                            src="./assets/img/class-avatar.jpg"
+                                                            alt>
+                                                        <span>Classe 79</span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="d-none d-md-table-cell">15
@@ -563,10 +581,12 @@
 
                                             <tr>
                                                 <td scope="row" class="col-1">
-                                                    <img height="30px"
-                                                        src="./assets/img/class-avatar.jpg"
-                                                        alt>
-                                                    Classe 80
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img height="30px"
+                                                            src="./assets/img/class-avatar.jpg"
+                                                            alt>
+                                                        <span>Classe 80</span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="d-none d-md-table-cell">15
@@ -598,11 +618,12 @@
 
                                             <tr>
                                                 <td scope="row" class="col-1">
-                                                    <img height="30px"
-                                                        src="./assets/img/class-avatar.jpg"
-                                                        alt>
-                                                    Classe 81
-                                                </td>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img height="30px"
+                                                            src="./assets/img/class-avatar.jpg"
+                                                            alt>
+                                                        <span>Classe 81</span>
+                                                    </div>
                                                 <td
                                                     class="d-none d-md-table-cell">15
                                                     Feb 2021</td>
@@ -633,10 +654,12 @@
 
                                             <tr>
                                                 <td scope="row" class="col-1">
-                                                    <img height="30px"
-                                                        src="./assets/img/class-avatar.jpg"
-                                                        alt>
-                                                    Classe 82
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <img height="30px"
+                                                            src="./assets/img/class-avatar.jpg"
+                                                            alt>
+                                                        <span>Classe 82</span>
+                                                    </div>
                                                 </td>
                                                 <td
                                                     class="d-none d-md-table-cell">15
@@ -751,25 +774,9 @@
                                         <div id="flush-collapseThree"
                                             class="accordion-collapse collapse"
                                             data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder
-                                                content for this accordion,
-                                                which is intended to
-                                                demonstrate
-                                                the <code>.accordion-flush</code>
-                                                class. This is the third
-                                                item's
-                                                accordion body. Nothing more
-                                                exciting happening here in
-                                                terms
-                                                of content, but just filling
-                                                up
-                                                the space to make it look,
-                                                at
-                                                least at first glance, a bit
-                                                more representative of how
-                                                this
-                                                would look in a real-world
-                                                application.</div>
+                                            <div class="accordion-body">
+                                                Di solito è inusuale usare dashboard del genere da mobile, ma i nostri sviluppatori hanno fatto di tutto per permettere un'esperienza utente accettabile anche da dispositivi a schermi ridotti.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -779,7 +786,7 @@
                             <!-- /#faq -->
 
                         </div>
-                        <!-- /.col-12 -->
+                        <!-- /.col-8 -->
 
                         <div class="col-12 col-lg-4 mt-4">
 
@@ -852,7 +859,7 @@
                             <!-- /#active_user -->
 
                         </div>
-                        <!-- /.col-12 -->
+                        <!-- /.col-4 -->
 
                     </div>
                     <!-- /.row -->
